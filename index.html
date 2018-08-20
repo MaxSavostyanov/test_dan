@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="valid.js" defer></script>
+
+  <title>Danfoss</title>
+</head>
+<body>
+
+<div class="container">
+ <img src="img/danfoss-new-logo-1-23-13.jpg" alt="danfoss" class="col-lg-2">
+  <form id="My_form">
+    <div class="col-lg-6 form">
+      <div class="form-group" id="name_equipment">
+        <label>Название оборудования</label>
+        <input type="text" class="form-control entry-field" placeholder="RAW Термостатический элемент...">
+        <small class="form-text text-muted"> Введите полное название оборудования.</small>
+      </div>
+      <div class="form-group" id="vendor_code">
+        <label>Артикул оборудования</label>
+        <input type="text" class="form-control entry-field" maxlength="18"
+       placeholder="0000000...">
+        <small class="form-text text-muted">Введите артикул оборудования (от 6 до 18 символов)</small>
+      </div>
+      <div class="form-group" id="description">
+        <label>Описание оборудования</label>
+        <textarea class="form-control entry-field" maxlength="100" rows="3" placeholder="Введите описание..."></textarea>
+        <small class="form-text text-muted">Не более 100 символов</small>
+      </div>
+      <div class="form-group" id="price">
+        <label>Цена</label>
+        <input type="text" class="form-control entry-field" placeholder="12345.23">
+        <small class="form-text text-muted">Диапазон значений от 0 до 15000 (2 знака после запятой)</small>
+      </div>
+      <div class="form-group" id="annotation">
+        <label>Примечание</label>
+        <textarea class="form-control" maxlength="500" rows="5" placeholder="Введите примечание..."></textarea>
+        <small class="form-text text-muted">Не более 500 символов</small>
+      </div>
+       <div class="alert"></div>
+      
+    <button type="button" class="btn" id="sent">Отправить</button>
+    </div>
+  </form>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>
